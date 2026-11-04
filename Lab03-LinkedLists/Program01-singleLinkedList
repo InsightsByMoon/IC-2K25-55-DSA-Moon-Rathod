@@ -1,7 +1,5 @@
 #include <iostream.h>
-#include <conio.h>
-#define MAX
-
+using namespace std;
 struct node
 {
     int data;
@@ -179,7 +177,7 @@ LL::~LL()
     }
 }
 
-void main()
+int main()
 {
     LL l1;
     char C;
@@ -215,7 +213,5 @@ void main()
             l1.search(num);
             break;
         }
-        C = getch();
     } while (C == 'y' || C == 'Y');
-    getch();
 }
