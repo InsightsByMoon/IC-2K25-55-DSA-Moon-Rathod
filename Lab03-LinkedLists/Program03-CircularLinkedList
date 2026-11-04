@@ -1,5 +1,5 @@
 #include <iostream.h>
-#include <conio.h>
+using namespace std;
 
 struct node
 {
@@ -228,7 +228,7 @@ CircularLL::~CircularLL()
     start = NULL;
 }
 
-void main()
+int main()
 {
     CircularLL l3;
     char C;
@@ -267,8 +267,6 @@ void main()
             break;
         }
         cout << "\nWant to continue? (y/n): ";
-        C = getch();
     } while (C == 'y' || C == 'Y');
     
-    getch();
 }
