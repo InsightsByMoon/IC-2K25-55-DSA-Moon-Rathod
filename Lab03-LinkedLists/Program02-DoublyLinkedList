@@ -1,5 +1,5 @@
 #include <iostream.h>
-#include <conio.h>
+using namespace std ;
 
 struct node
 {
@@ -214,7 +214,7 @@ DoublyLL::~DoublyLL()
     }
 }
 
-void main()
+int main()
 {
     DoublyLL l2;
     char C;
@@ -253,8 +253,6 @@ void main()
             break;
         }
         cout << "\nWant to continue? (y/n): ";
-        C = getche();
     } while (C == 'y' || C == 'Y');
     
-    getch();
 }
